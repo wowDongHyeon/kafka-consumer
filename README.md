@@ -37,11 +37,16 @@
 ## 애플리케이션 테스트
 
 - Kafka Producer를 사용하여 `test-topic`에 메시지를 전송합니다.
-- MongoDB에서 메시지가 `logs` 컬렉션에 기록되었는지 확인합니다.
+ ``` 
+curl -X POST "http://localhost:8080/send?topic=test-topic&message=bye"
+```
+
+- MongoDB에서 메시지가 `logs` 컬렉션에 consumer로 기록되었는지 확인합니다.
 
 ## 데모 캡처본
 
-![Kafka Consumer](https://github.com/user-attachments/assets/4b3e8bb3-5ee0-4d94-b6b8-f84caa8eaf8e)
+![image](https://github.com/user-attachments/assets/b11d0bb3-5ef6-4c2d-ba4c-329b1259d107)
+![image](https://github.com/user-attachments/assets/0f9fae00-189d-42bc-84dd-231ff494e96f)
 
 ## 라이선스
 
