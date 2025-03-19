@@ -41,6 +41,8 @@
 curl -X POST "http://localhost:8080/send?topic=test-topic&message=bye"
 ```
 
+- Consumer 어플리케이션에서 message를 수신하고, MongoDB에 로그메세지를 저장합니다.
+
 - MongoDB에서 메시지가 `logs` 컬렉션에 consumer로 기록되었는지 확인합니다.
 
 ## 데모 캡처본
